@@ -1,27 +1,21 @@
-var answer = prompt('What programming language is the name of this gem?');
-
-
-if ( answer === 'Ruby')
-{
- document.write("<p>That's right!</p>");
-}
- else
- {
-   document.write("<p>Sorry, wrong answer.</p>");
- }
-
-
-
-// comparing answers example
-
- if ( a > b ) {
-   alert('a is greater than b')
- }
-
- else {
-     alert(' a is NOT greater than b')
-   };
-
-
+var correctGuess = false;
 var randomNumber = Math.floor(Math.random() * 6 ) + 1;
-var guess = prompt('I am thinking of a number between 1 and 6. What is it?')
+var guess = prompt('I am thinking of a number between 1 and 6. What is it?');
+if (parseInt(guess) === randomNumber ) {
+  correctGuess = true;
+} else if ( parseInt(guess) < randomNumber ) {
+  var guessMore = prompt('Try again. The number I am thinking of is more than ' + guess);
+  if (parseInt(guessMore) === randomNumber) {
+    correctGuess = true;
+  }
+} else if ( parseInt(guess) > randomNumber ) {
+  var guessLess = prompt('Try again. The number I am thining of is less than ' + guess);
+  if (parseInt(guessLess) === randomNumber) {
+  correctGuess = true;
+  }
+}
+if ( correctGuess ){
+  document.write('<p>You guessed the number!</p>')
+} else {
+  document.write('<p>Sorry. The number was ' + randomNumber + '.</p>')
+}
