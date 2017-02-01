@@ -1,7 +1,6 @@
-var crap = new Array(3);
+var dudes = new Array("Grace", "Dan", "Eddie,");
+var chicks = new Array("Lisa", "Erin", "Hannah");
 
-for(i=0;i<3;i++){
-  crap[i] = prompt("Add something to the Array:", "");
-}
+var people = dudes.concat(chicks);
 
-document.write(crap[0] + crap[1] + crap[2])
+document.write(people[3]);
