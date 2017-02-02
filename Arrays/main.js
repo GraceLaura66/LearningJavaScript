@@ -1,6 +1,26 @@
-var dudes = new Array("Grace", "Dan", "Eddie,");
-var chicks = new Array("Lisa", "Erin", "Hannah");
+function randomNumber(upper) {
+  return Math.floor( Math.random() * upper ) + 1;
+}
+var counter = 0;
+while ( counter < 1000 ) {
+  var randNum = randomNumber(6);
+  document.write(randNum + '');
+  counter += 1;
+}
 
-var people = dudes.concat(chicks);
 
-document.write(people[3]);
+
+
+
+document.write(count);
+
+
+
+
+
+
+
+// while () {
+//
+//
+// }
