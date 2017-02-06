@@ -1,34 +1,71 @@
-function randomNumber(upper) {
-  return Math.floor( Math.random() * upper ) + 1;
-
-}
-var counter = 0;
-while ( counter < 100 ) {
-  var randomNumber = randomNumber(6);
-  document.write(randNum + '');
-  counter += 1;
-}
 
 
-First the JavaScript interpreter reads through the program.
-It memorizes the function and checks for any syntax errors.
-Then it starts to run the program. It creates a variable named counter and stores the value of zero in it.
-It then looks at the while loop.
-It tests the condition.
-At this point, the counter variable holds a value of zero.
-The loop coniditon asks if the counter is less than 10.
-In this condition, yes, 0 is less than 10 so the JavaScript in terpreter enters the codeblock
-and does several things.
-First, it generates a new random number from 1 to 6.
-It writes that random number in a space character to the page.
-It adds 1 to the counter variable.
-That variable now holds the value of 1.
-The loop goes back to the while condition and checks it again.
-Is 1 less than 10? Yes it is. So the loop runs again and again until the loop condition is
-no longer true.
-So when the counter is equal to 10 the condition is no longer true cause the condition si not less than 10.
-The loop ends and the program continues.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//           While Loop Definition:
+// With a While Loop the condition is evaluated before the loop.
+// 1) If the test condition is not true at the begining then the loop will NEVER run.
+// 2) You always need a way to break out of the loop. This is where "break" comes in handy.
+// You can always change a variable inside the loop to change to false.
+// Do no create endless loops where the condition is always true.
+//
+//         Do While Loop Definition:
+// The do while loop will always execute the code block at least once.
+// Thats because the condition isnt tested until after the codeblock.
+// Do While Loops are useful when you want to prompt the user for some information
+// and make sure the user gives it to you.
+//
+//         Differences:
+// A While Loop checks the coniditon at the very beginning. If the condition is true, then the loop runs. If false, the loop does not run.
+// The Do While loop doesnt check the condition until the codeblock has been run once.
+// Then, if the condition is true it runs again and again until the condition is no longer true.
+
+
+// function randomNumber(upper) {
+//   return Math.floor( Math.random() * upper ) + 1;
+//
+// }
+// var counter = 0;
+// while ( counter < 100 ) {
+//   var randomNumber = randomNumber(6);
+//   document.write(randNum + '');
+//   counter += 1;
+// }
+//
+//
+// First the JavaScript interpreter reads through the program.
+// It memorizes the function and checks for any syntax errors.
+// Then it starts to run the program. It creates a variable named counter and stores the value of zero in it.
+// It then looks at the while loop.
+// It tests the condition.
+// At this point, the counter variable holds a value of zero.
+// The loop coniditon asks if the counter is less than 10.
+// In this condition, yes, 0 is less than 10 so the JavaScript in terpreter enters the codeblock
+// and does several things.
+// First, it generates a new random number from 1 to 6.
+// It writes that random number in a space character to the page.
+// It adds 1 to the counter variable.
+// That variable now holds the value of 1.
+// The loop goes back to the while condition and checks it again.
+// Is 1 less than 10? Yes it is. So the loop runs again and again until the loop condition is
+// no longer true.
+// So when the counter is equal to 10 the condition is no longer true cause the condition si not less than 10.
+// The loop ends and the program continues.
+//
 
 
 
