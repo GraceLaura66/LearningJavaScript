@@ -6,10 +6,106 @@
       <link rel="stylesheet" href="style.css">
   </head>
   <body>
+<h1>Lesson One</h1>
+<p id="demo"></p>
 
-  <h1>A programming quiz</h1>
 
 
     <script type="text/javascript" src="main.js"></script>
+    <script>
+
+      //variable and literals
+      // var x = "Hello";
+      // document.getElementById("demo").innerHTML = "Hello";
+
+
+      //statements and decalring variables without values
+      // var x, y;
+      // x = 100;
+      // y = 2;
+      // document.getElementById("demo").innerHTML = x + 5;
+
+      //statements,string,cancatenation
+      // var cat = "kat";
+      // var dog = "dogz";
+      // document.getElementById("demo").innerHTML = cat  + " " + 100 + " " + dog;
+
+      // comment this!
+      /* This is a longer comment you would use for this comment line blah, blah,blah
+      I like buzzmill and beer and JavaScript and Austin
+      Blah, Blah, Blah
+      */
+
+
+      //decalring several variables
+      // var a = "a", b = "b", c = 100;
+      //
+      // var austin = "the best city";
+      // var austin;
+      // austin = "the best beer";
+      // document.getElementById("demo").innerHTML = austin;
+      //
+
+      //Arrays
+
+      // var movies = ["drama", "romance", "comedy"];
+      // document.getElementById("demo").innerHTML = movies;
+      // var movies2 = new Array("drama", "romance", " comedy")
+      // document.getElementById("demo").innerHTML = movies2;
+      //
+      // var romance = movies[1]
+      // document.getElementById("demo").innerHTML = romance;
+      //
+      // var drama = movies[0]
+      // document.getElementById("demo").innerHTML = drama;
+      //
+      //
+      // //length is a property
+      // var length = movies.length
+      // document.getElementById("demo").innerHTML = length;
+      //
+      // //sort is method
+      // var sorted_movies= movies.sort();
+      // console.log(sorted_movies);
+      // document.getElementById("demo").innerHTML = sorted_movies;
+
+      //looping through an Array
+
+      var food = ["pizza", "burger", "ice cream"];
+      var length = food.length;
+      var i;
+      for (i = 0; i < length; i++){
+        console.log(food[i]);
+      }
+
+      food.splice(2, 1, "hairy");
+      document.getElementById("demo").innerHTML = food;
+
+      //Push elements to an Array at the end
+      //
+      // var fruit = "apple";
+      // food.push(fruit)
+      // document.getElementById("demo").innerHTML = food;
+      //
+      // food.push("peas")
+      // document.getElementById("demo").innerHTML = food;
+      //
+      //
+      // //Adding to an Array at an index
+      // food[1] = "cake";
+      // document.getElementById("demo").innerHTML = food;
+      //
+      //
+      // //Adding to an Array at an index that doesnst exist
+      // food[100] = "coffee";
+      // document.getElementById("demo").innerHTML = food;
+
+
+
+
+
+
+
+    </script>
   </body>
 </html>

@@ -1,3 +1,46 @@
+repl.it
+
+
+
+
+
+
+
+
+//quiz begins
+var correct = 0;
+
+//ask questions
+var answer1 = prompt('Name a programming language that\'s also a gem');
+if ( answer1.toUpperCase() === 'RUBY') {
+  correct += 1;
+}
+var answer2 = prompt("Name a programming langauge that's also a snake");
+if (answer2.toUpperCase === 'PYTHON') {
+  correct += 1;
+}
+Var answer3 = prompt ("What langauge ddo you use to stlye web pages?");
+if (answer3.toUpperCase === 'CSS'); {
+  correct += 1;
+}
+var answer4 = prompt("What lagauage do you use to build the structure of web pages?");
+if (answer4.toUpperCase === 'HTML') {
+  correct +=1;
+}
+var answer5 = prompt("What langauge do you use to add interactivity to a web page?");
+if (answer5.toUpperCase === 'JAVASCRIPT') {
+  correct += 1;
+}
+
+//output results
+document.write("<p>You got " + correct + " out of 5 questions correct.</p>");
+
+//output rank
+if ( correct === 5 ) {
+  document.write("<p><strong> You earned a gold crown!</strong></p>");
+} else if ( correct >= 3 ) {
+  document.write("<p><strong>You earned a silver crown.</strong></p>");
+}
 
 
 
@@ -11,11 +54,144 @@
 
 
 
+var calculatorOn = false;
+
+function pressPowerButton() {
+  if (calculatorOn) {
+    console.log('Calculator turning off.');
+    calculatorOn = false;
+  } else {
+    console.log('Calculator turning on.');
+    calculatorOn = true;
+  }
+}
+
+pressPowerButton();
+// Output: Calculator turning on.
+
+pressPowerButton();
+// Output: Calculator turning off.
+
+
+
+
+var moonPhase = 'full';
+
+switch (moonPhase) {
+ case 'full':
+    console.log('Howwwwlll!!');
+    break;
+ case 'mostly full':
+    console.log('Arms and legs are getting harrier');
+    break;
+ case 'mostly new':
+    console.log('Back on two feet');
+    break;
+  default:
+    console.log('Invalid moon phase');
+    break;
+}
+
+
+&& checks if both sides are true.
+|| checks if either side is true.
+!== checks if both sides are not equal.
+! changes a variable that is true to false, and vice versa.
+
+
+
+function getRandomNumber ( upper ) {
+  var randomNumber = Math.floor( Math.random() * upper ) + 1;
+  return randomNumber;
+}
+// console.log( getRandomNumber(6) );
+// console.log( getRandomNumber(100) );
+// console.log( getRandomNumber(10000) );
+// console.log( getRandomNumber(2) );
+function getArea(width, legth) {
+  var area = width * length;
+  return area + " " + unit;
+}
+console.log(getArea(10, 20, 'sq ft'));
 
 
 
 
 
+
+
+
+function returnValue(ferociousAnimal) {
+  return ferociousAnimal;
+}
+
+var echo = returnValue('Red Fox');
+
+
+
+
+
+getYear();
+var yearToday = getYear();
+
+
+
+
+
+function alertRandom() {
+  var randomNumber = Math.floor( Math.random () * 6 ) + 1;
+  alert( randomNumber);
+}
+alertRandom();
+
+//returning values
+function getRandomNumber() {
+  var randomNumber = Math.floor( Math.random () * 6 ) + 1;
+  return randomNumber;
+}
+alert( getRandomNumber() );
+console.log( getRandomNumber() );
+var dieRoll = getRandomNumber ();
+//return statement should be the last thing in a funtion
+
+//access elements in form field
+function isEmailEmpty() {
+  var field = document.getElementById('email');
+  if (field.value === '') {
+    return true;
+  } else {
+    return false;
+  }
+}
+var fieldTest = isEmailEmpty();
+if (fieldTest === true) {
+  alert('Please provide your email address.');
+}
+
+
+
+
+
+
+
+
+("3" === 3)
+This would be false because one is considered a string
+and the other is a number value
+
+
+> Greater Than
+>= Greater Than or Equal To
+< Less Than
+<= Less Than Or Equal To
+=== Equal to
+!= Not Equal To
+!== Strict Not Equal To
+
+
+
+
+//
 //           While Loop Definition:
 // With a While Loop the condition is evaluated before the loop.
 // 1) If the test condition is not true at the begining then the loop will NEVER run.
@@ -76,32 +252,32 @@
 
 
 
-// var guess;
-// var guestCount = 0;
-// var correctGuess = false;
-//
-// function getRandomNumber( upper ) {
-//   var num = Math.floor(Math.random() * upper) + 1;
-//   return num;
-// }
-//
-// while ( guessCount < 10 ) {
-//   guess = prompt('I am thinking of a number between 1 and 10. What is it?');
-//   guessCount += 1;
-//   if (parseInt(guess) === randomNumber) {
-//     correctGuess = true;
-//     break;
-//   }
-// }
-//
-// if ( correctGuess ) {
-//   document.write('<h1>You guessed the number!</h1>');
-//   document.write('It took you ' + guessCount + ' tries to guess the number ' + randomNumber);
-// } else {
-//     document.write('<h1>Sorry. You did not guess the number.</h1>');
-//   }
-// }
-//
+var guess;
+var guestCount = 0;
+var correctGuess = false;
+
+function getRandomNumber( upper ) {
+  var num = Math.floor(Math.random() * upper) + 1;
+  return num;
+}
+
+while ( guessCount < 10 ) {
+  guess = prompt('I am thinking of a number between 1 and 10. What is it?');
+  guessCount += 1;
+  if (parseInt(guess) === randomNumber) {
+    correctGuess = true;
+    break;
+  }
+}
+
+if ( correctGuess ) {
+  document.write('<h1>You guessed the number!</h1>');
+  document.write('It took you ' + guessCount + ' tries to guess the number ' + randomNumber);
+} else {
+    document.write('<h1>Sorry. You did not guess the number.</h1>');
+  }
+}
+
 
 
 
