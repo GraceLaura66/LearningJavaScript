@@ -1,8 +1,21 @@
-repl.it
+var array = ["Hello ","World"];
 
 
 
 
+
+
+//MAPPING OR FILTERING ARRAYS
+
+
+
+
+
+
+
+
+playList.push('');
+printList(playList);
 
 
 
