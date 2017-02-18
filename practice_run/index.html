@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <script src="main.js">
-      
+<body>
+    <h1>JavaScript </h1>
+
+    <p id="demo"></p>
+
+
+    <script>
+        //js function for getting the highest CC value
+        var highest_val = function myFunction(arr) {
+            var arr_length = arr.length
+            var highest_sum = 0;
+            var highest_sum_index;
+            var i;
+            for (i = 0; i < arr_length; i++) {
+                str_without_hyphens = arr[i].replace(/-/g, "");
+                // console.log(str_without_hyphens);
+
+                //converts string into number(integer)
+                var value = parseInt(str_without_hyphens);
+                sum = 0;
+                while (value) {
+                    sum += value % 10;
+                    value = Math.floor(value / 10);
+                    //console.log(sum)
+                }
+                //added the equal to take in the last value if there are 2 highest values
+                if (sum >= highest_sum) {
+                    highest_sum = sum
+                    highest_sum_index = i;
+                }
+            }
+            return arr[highest_sum_index]
+        }
+
+        //array of credit card values
+        arr = ['4916-2600-1804-0530', '4779-252888-3972', '4252-278893-7978', '4556-4242-9283-2260']
+        //print highest CC value
+        document.getElementById("demo").innerHTML = highest_val(arr);
+
+
     </script>
-  </body>
+</body>
 </html>
