@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Mapping an Array</h1>
+    <p>The original array: <span id="original"><span></p>
+    <p>The sum of the array is...<span id="new"><span></p>
+  <p>An Accumulator is a way of transforming data via creating a new array</p>
+
+
+//return sum of values given in an array
+    <script>
+    var originalArray = [3, 2, 4, 5];
+  function sumArray(array) {
+   var newArray = []
+   var sum = 0;
+   for (var i = 0; i < array.length; i++){
+      sum = sum + originalArray[i];
+   }
+   newArray.push(sum);
+   return newArray;
+  }
+
+
+  document.getElementById("original").innerHTML = originalArray;
+  document.getElementById("new").innerHTML = sumArray(originalArray);
+
+    </script>
+  </body>
+</html>
