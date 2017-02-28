@@ -1,24 +1,40 @@
 
 
-sum =0;
-while (value) {
-  sum += value % 10;
-  value = Math.floor(value / 10);
- }
- //gives the sum of cc numbers given a value
+to get the last element of a string or array do length -1
+
+
+
+WHEN BUILDING A VALUE
+
+Array = []
+String = ""
+Object {}
+Number = 0
 
 
 
 
-var cards = ['4916-2600-1804-0530', '4779-252888-3972', '4252-278893-7978', '4556-4242-9283-2260'];
- var results = function myFunction( cards ){
-   var length = cards.length;
-   var i;
-   for ( i = 0; i < length; i++ ) {
-     console.log('pizza');
-   }
-}
-console.log(results);
+//
+//
+// sum =0;
+// while (value) {
+//   sum += value % 10;
+//   value = Math.floor(value / 10);
+//  }
+//  //gives the sum of cc numbers given a value
+//
+//
+//
+//
+// var cards = ['4916-2600-1804-0530', '4779-252888-3972', '4252-278893-7978', '4556-4242-9283-2260'];
+//  var results = function myFunction( cards ){
+//    var length = cards.length;
+//    var i;
+//    for ( i = 0; i < length; i++ ) {
+//      console.log('pizza');
+//    }
+// }
+// console.log(results);
 
 
 
